@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
 }
+*/ style of the body in about.html /*
 body{
     font-family: 'Playfair Display', serif;
     display: grid;
@@ -12,6 +13,7 @@ body{
     align-content: center;
     min-height: 100vh;
 }
+*/ in section viewe/*
 section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,6 +52,7 @@ section{
     margin: 0 auto;
     line-height: 1.7;
 }
+*/ the style of the social media links/*
 .links{
     margin: 15px 0;
 }
@@ -78,6 +81,7 @@ section{
     background: #777;
     margin: 0 auto;
 }
+*/ icon style/*
 .icons{
     display: flex;
     padding: 15px 0;
