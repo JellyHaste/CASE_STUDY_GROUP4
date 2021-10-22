@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Outdoor</title>
+    <link rel="stylesheet" href="outdoor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">    
+            <h1>OUTDOOR POTS</h1>
+           
+        </div>
+      
+        <div class="product">
+            <div class="images">
+                <div class="slider">
+                    <img src="outdoor.jfif" alt="">
+                </div>
+                <div class="thumbnail">
+                    <div class="thumb active">
+                        <img src="outdoor4.jfif">
+                    </div>
+                    <div class="thumb">
+                        <img src="outdoor2.png" alt="">
+                    </div>
+                    <div class="thumb">
+                        <img src="outdoor3.JPG">
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+            
+            <h1 class="price">₱80.00</h1>
+            <h4 class="title">Color</h4>
+            <div class="colors">
+                <span class="color green"></span>
+                <span class="color orange"></span>
+                <span class="color pink"></span>
+            </div>
+            <h4 class="title">Size</h4>
+            <div class="sizes">
+                <span class="size">XS</span>
+                <span class="size">S</span>
+                <span class="size">M</span>
+                <span class="size">L</span>
+                <span class="size">XL</span>
+            </div>
+            <h4 class="title">Qty</h4>
+            <input type="text" value="1" class="qty">
+            <a href="" class="cart">Add to cart</a>
+        </div>
+        </div>
+    </div>
+    <script>
+        const thumbs = document.querySelectorAll('.thumb');
+        const slider = document.querySelector('.slider');
+        
+        function changeImage(){
+           thumbs.forEach(thumb => thumb.classList.remove('active')); 
+            this.classList.add('active');
+            slider.getElementsByTagName('img')[0].src = this.getElementsByTagName('img')[0].src;
+        }
+        
+        thumbs.forEach(thumb => thumb.addEventListener('click', changeImage));
+        
+    </script>
+</body>
+</html>
